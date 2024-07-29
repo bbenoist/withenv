@@ -1,0 +1,5 @@
+*.log
+*.tgz
+/.local
+/lib
+/node_modules

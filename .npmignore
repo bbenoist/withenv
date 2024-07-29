@@ -1,0 +1,15 @@
+*.log
+*.test.ts
+*.tgz
+/.gitiignore
+/.local
+/.npmrc
+/.npmignore
+/.vscode
+/jest.config.js
+/node_modules
+/pnpm-lock.yaml
+/src
+/tsconfig.build.json
+/tsconfig.json
+/test
