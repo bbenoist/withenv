@@ -17,6 +17,9 @@
     "access": "public"
   },
   "main": "index.js",
+  "bin": {
+    "withenv": "bin/withenv.cjs"
+  },
   "scripts": {
     "build": "tsc --project tsconfig.build.json",
     "test": "jest"
