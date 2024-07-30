@@ -1,6 +1,6 @@
 {
   "name": "@bb-tools/withenv",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "An environment variable loader for your monorepo.",
   "homepage": "https://github.com/bbenoist/withenv",
   "repository": {
