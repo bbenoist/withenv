@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { dirname, join as joinPath } from "node:path";
 import dotenv from "dotenv";
+import { expand as dotenvExpand } from "dotenv-expand";
 import yaml from "yaml";
 import { SetRequired } from "type-fest";
 import { EnvConfig, Config } from "./config";
@@ -91,8 +92,8 @@ const getEnvConfig = (config: LoadedConfig, env: string): LoadedEnvConfig => {
 
 const loadEnvFiles = (envFiles: string[]): void => {
   for (const envFile of envFiles) {
-    dotenv.config({ path: envFile, override: true });
-    dotenv.config({ path: `${envFile}.local`, override: true });
+    dotenvExpand(dotenv.config({ path: envFile, override: true }));
+    dotenvExpand(dotenv.config({ path: `${envFile}.local`, override: true }));
   }
 };
 

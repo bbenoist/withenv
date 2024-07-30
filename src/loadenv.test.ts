@@ -17,6 +17,7 @@ describe("loadEnv", () => {
     expect(process.env).toHaveProperty("NODE_ENV", "test");
     expect(process.env).toHaveProperty("WITHENV_COMMON_VAR", "foo");
     expect(process.env).toHaveProperty("WITHENV_OVERRIDDEN_VAR", "buzz");
+    expect(process.env).toHaveProperty("WITHENV_REUSING_VAR", "foo-fizz");
   });
 
   it("supports alias", async () => {
